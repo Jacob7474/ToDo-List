@@ -1,0 +1,115 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*, *::before,*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+}
+/* header */
+header{
+    margin: 1vh;
+}
+/* hr */
+#seperator{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+/* List */
+main{
+    margin: 1vh;
+}
+#Todo-submit{
+    width: 98%;
+}
+#addToDo{
+    height: 1.5em;
+    font-size: 2rem;
+    width: 80%;
+}
+/* bottom-list */
+#submitBtn{
+    font-size: 2rem;
+    height: 1.5em;
+    padding: 0.25rem;
+    color: #9B5DE5;
+    background-color: #f0efef;
+} 
+#submitBtn:hover , #submitBtn:focus{
+    background-color: #dbc9f1;
+}
+#submitBtn:active{
+    background-color: #cfb6ee;
+    border: 2px solid #550881;
+}
+#ToDoList{
+    border: 2px solid whitesmoke;
+    border-radius: 1rem;
+}
+#checkmark{
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    color: white;
+    margin: 0px 0px 0px 2px;
+}
+.ToDoElement{
+    display: flex;
+    flex-direction: row;
+}  
+.ToDoElement p{
+    word-break: break-all;
+} 
+.ToDoElement button{
+    width: 1.5em;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.checkmarkBtn{
+    margin-right: 2vw;
+    border-radius: 1rem 0px 0px 1rem;
+    background-color: #9B5DE5;
+    color: white;
+} 
+.deleteBtn{
+    margin-left: auto;
+    border-radius: 0px 1rem 1rem 0px;
+    background-color: #672ab3;
+    color: white;
+}
+@media screen 
+and (min-device-width: 800px)
+and (orientation : portrait) {
+    body{
+        font-size: 3.75rem;
+    }
+    #addToDo{
+        font-size: 3rem;
+    }
+    #submitBtn{
+        font-size: 3rem;
+    }
+    .ToDoElement button{
+        font-size: 2.25rem;
+    }
+}
+@media screen 
+and (min-device-width: 1000px)
+and (orientation : landscape) {
+    body{
+        font-size: 3.75rem;
+    }
+    #addToDo{
+        font-size: 3rem;
+    }
+    #submitBtn{
+        font-size: 3rem;
+    }
+    .ToDoElement button{
+        font-size: 2.25rem;
+    }
+}
